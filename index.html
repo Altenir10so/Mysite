@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ALT CORP LTDA</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #FFD700; /* amarelo */
+      color: black;
+    }
+
+    section {
+      height: 100vh;
+      padding: 60px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h1, h2, h3, p, label, input, textarea, button {
+      font-size: 1.1em;
+      line-height: 1.1;
+    }
+
+    .main-title {
+      color: green;
+      font-size: 3.2em;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      width: fit-content;
+    }
+
+    img {
+      margin-top: 30px;
+      width: 90%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .dark-overlay {
+      background-image: url('https://via.placeholder.com/1920x1080');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: white;
+    }
+
+    .dark-overlay::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    .dark-overlay > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff8b0;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      font-size: 1em;
+      border: 2px solid black;
+      border-radius: 5px;
+    }
+
+    .contact-info {
+      font-size: 1.6em;
+      line-height: 1.6;
+    }
+
+    a {
+      color: green;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 1. TELA PRINCIPAL -->
+<section>
+  <h1 class="main-title">ALT CORP LTDA</h1>
+  <h2>Consultoria estratégica para empresas modernas</h2>
+  <p>Transformamos desafios empresariais em oportunidades com soluções personalizadas em gestão, tecnologia e inovação. Nossa equipe oferece suporte completo para acelerar seu crescimento.</p>
+  <img src="https://images.unsplash.com/photo-1645658043538-fc2bb1702cfe?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="Imagem corporativa">
+  <a href="#contato" class="button">Entrar em contato</a>
+</section>
+
+<!-- 2. SOBRE NÓS -->
+<section>
+  <h2>Quem Somos</h2>
+  <p>Somos especialistas em transformar negócios através de estratégias inteligentes. Atuamos com foco em performance, inovação e soluções sob medida. Desde startups até empresas consolidadas, oferecemos consultoria personalizada que promove crescimento sustentável. Nosso time combina experiência em gestão, tecnologia e mercado. Acreditamos em parcerias de longo prazo baseadas em resultados reais.</p>
+</section>
+
+<!-- 3. SERVIÇOS -->
+<section class="dark-overlay">
+  <h2>O que Fazemos</h2>
+  <h3>Consultoria em Gestão</h3>
+  <p>Estruturamos processos internos, redesenhamos operações e criamos estratégias para aumentar a eficiência e competitividade da sua empresa.</p>
+
+  <h3>Consultoria Empresarial</h3>
+  <p>Oferecemos análises profundas, diagnósticos claros e planos de ação que trazem retorno financeiro e alinhamento estratégico.</p>
+
+  <h3>Suporte em TI</h3>
+  <p>Implementamos soluções tecnológicas, oferecemos suporte técnico e garantimos segurança da informação para sua operação.</p>
+</section>
+
+<!-- 4. DIFERENCIAIS -->
+<section>
+  <h2>Por Que Trabalhar Conosco</h2>
+  <h3>Atendimento Personalizado</h3>
+  <p>Você fala com quem entende seu negócio. Sem soluções prontas – tudo é feito sob medida.</p>
+
+  <h3>Visão Estratégica</h3>
+  <p>Não apenas resolvemos problemas: antecipamos desafios e criamos caminhos sustentáveis.</p>
+
+  <h3>Compromisso com Resultados</h3>
+  <p>Mensuramos, ajustamos e entregamos valor real. Nosso sucesso depende do seu.</p>
+</section>
+
+<!-- 5. NOSSO PROCESSO -->
+<section>
+  <h2>Nosso Processo</h2>
+  <h3>1. Diagnóstico Estratégico</h3>
+  <p>Analisamos profundamente sua empresa, mercado e pontos críticos de atenção.</p>
+
+  <h3>2. Planejamento e Proposta</h3>
+  <p>Desenhamos um plano de ação alinhado com seus objetivos e recursos disponíveis.</p>
+
+  <h3>3. Execução e Suporte</h3>
+  <p>Aplicamos a estratégia com acompanhamento contínuo e ajustes em tempo real.</p>
+</section>
+
+<!-- 6. CONTATO -->
+<section>
+  <h2>Nosso Endereço</h2>
+  <div class="contact-info">
+    <p>E-mail: <a href="mailto:box@altcorp.pro">box@altcorp.pro</a></p>
+  </div>
+    <p>Trav. Justo Chermont 246 Andar<br>
+    68180-610 Itaituba - PA</p>
+  </div>
+</section>
+<section id="contato">
+  <h2>Vamos Conversar?</h2>
+  <p>Estamos prontos para ouvir você e criar soluções que realmente funcionam. Fale conosco por e-mail ou envie uma mensagem pelo formulário abaixo:</p>
+  
+  <div class="form-container">
+    <form>
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+      </div>
+      <button class="button" type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+
+
+</body>
+</html>
